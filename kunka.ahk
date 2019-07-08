@@ -4,6 +4,7 @@
 #SingleInstance force
 #IfWinActive Dota 2
 
+;; Use torrent, if wanna procast, movemouse to x mark and press d or f
 
 d::  
   Send, q		; use torrent 
@@ -20,6 +21,7 @@ f::
 return
 
 ; Double tap Armlet
+; On armlet and use its
 space::  
   item(6) 		
   Sleep, 60
