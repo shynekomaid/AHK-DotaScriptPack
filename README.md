@@ -1,9 +1,9 @@
 # -AHK-DotaScriptPack-
-# New scripts soon
+# New scripts soon - see ToDo.list
 
-Need AutoHotKey to work.
+Need AutoHotKey (current version) to work. -DIRECT LINK- https://www.autohotkey.com/download/ahk-install.exe
 
-Configured to 16:9 [1366 768] display, some features may don`t work on  another display, but you can configure to you display.
+Configured to 16:9 [1366x768] display, some features may don`t work on  another display, but you can configure to you display.
 
 1. Enable quikcast`s on dota preference !important!
 2. Configure ability and item hotkey on file utility.ahk as you Dota 2 preference.
