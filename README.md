@@ -12,6 +12,7 @@ Configured to 16:9 [1366x768] display, some features may don`t work on  another 
 5. Read %scripts_name%.ahk file to understand how use chosen script.
 
 Hotkey on utility.ahk and timer.ahk:
+
 @ space + mouseMidButton -- abuse item on shrine.
 @ alt + mouseMidButton -- abuse item on fountain.
 @ left win -- spam left mouse key.
