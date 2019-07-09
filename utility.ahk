@@ -82,7 +82,7 @@ F6::
 	return
 
 PgUp::
-gosub timerOff
+gosub timerToggle
 return
 
 
@@ -273,6 +273,8 @@ dragr(x2,y2,x1,y1)
 }
 
 
+space & 3:: tpBase()
+
 alt & MButton::
 	Send, %selectHero%
 	delay()
@@ -425,7 +427,7 @@ Numpad0::
 	}
 return
 
-timerOff:
+timerToggle:
 	PostMessage, 0x111, 65306,,, timer.ahk ahk_class AutoHotkey ; Pause, Toggle
 	if timerPaused
 	{

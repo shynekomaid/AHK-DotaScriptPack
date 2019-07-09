@@ -12,17 +12,17 @@ Configured to 16:9 [1366x768] display, some features may don`t work on  another 
 5. Read %scripts_name%.ahk file to understand how use chosen script.
 
 Hotkey on utility.ahk and timer.ahk:
----------------------------------------------------------
-1. space + mouseMidButton -- abuse item on shrine.
-2. alt + mouseMidButton -- abuse item on fountain.
-3. left win -- spam left mouse key.
-4. space + Numpad0 -- enable launch scripts by name.
-5. Numpad0 -- suspend (dont stop timer.ahk, but stop another scrips enable utility.ahk)
-6. F7 -- Load timer notifications to chat (runes and roshan, after press {numpad -} [timer.ahk]); item slots analyser.
-7. F6 -- Item slots analyser.
-8. LAlt + Numpad0 -- reload scripts (dont reload timer.ahk).
-9. space + F7 -- off timer notifications to chat (dont save state!).
-10. PgUp -- pause timer notifications to chat (use when game paused!).
+space + mouseMidButton -- abuse item on shrine.
+alt + mouseMidButton -- abuse item on fountain.
+left win -- spam left mouse key.
+space + Numpad0 -- enable launch scripts by name.
+Numpad0 -- suspend (dont stop timer.ahk, but stop another scrips enable utility.ahk)
+F7 -- Load timer notifications to chat (runes and roshan, after press {numpad -} [timer.ahk]); item slots analyser.
+F6 -- Item slots analyser.
+LAlt + Numpad0 -- reload scripts (dont reload timer.ahk)
+space + F7 -- off timer notifications to chat (dont save state!)
+PgUp -- pause timer notifications to chat (use when game paused!)
+space + 3 -- instant tp to base
 
 ---------- NOTE FOR CONFIGURE FOR ALL DISPLAY ----------
 
