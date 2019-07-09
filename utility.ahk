@@ -25,9 +25,11 @@ Menu, Tray, Icon, %I_Default%
 ;Config
 ;------------------------------
 global directional_move = "h"
+global move_to = "m"
 global attack = "a"
 global stop = "s"
 global selectHero = "{f1}"
+global lastActions = "l"
 ;Item
 global item1 = "t"
 global item2 = "WheelUp"
@@ -132,7 +134,7 @@ delay()
 	Sleep, 50
 }
 
-long_delay()
+
 {	
 	Sleep, 100
 }
@@ -146,6 +148,13 @@ delayT(delayTime)
 direct()
 {  	
 	Send, {%directional_move% Down}{Click, R}{%directional_move% Up}       
+}
+
+backWingBroke(){
+	Send, %move_to%
+	sleep, 10
+	MouseClick, left
+	Send, %stop%
 }
 
 directedAbility(i)
@@ -221,7 +230,6 @@ ability(i)
 
 altAbility(i)
 {	
-	delay()
 	Send, {Alt down}
 	delay()
 	if i = 1	
