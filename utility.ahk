@@ -28,7 +28,7 @@ global directional_move = "h"
 global move_to = "m"
 global attack = "a"
 global stop = "s"
-global selectHero = "{f1}"
+global selectHero = "f1"
 global lastActions = "l"
 ;Item
 global item1 = "t"
@@ -37,7 +37,9 @@ global item3 = "WheelDown"
 global item4 = "x"
 global item5 = "c"
 global item6 = "v"
-
+;camera
+global camera_9 = "Numpad7"
+global camera_10 = "Numpad8"
 ;teleport
 global tp = "3"
 
