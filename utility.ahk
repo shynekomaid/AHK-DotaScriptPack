@@ -405,6 +405,63 @@ return
 	}
 return
 
+:*:magn::
+	if runStatus
+	{
+		loadedScript = magnus.ahk
+		Run %loadedScript%
+		runStatus = 0
+		loadText = Magnus will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:lega::
+	if runStatus
+	{
+		loadedScript = legion.ahk
+		Run %loadedScript%
+		runStatus = 0
+		loadText = Legion will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:mars::
+	if runStatus
+	{
+		loadedScript = mars.ahk
+		Run %loadedScript%
+		runStatus = 0
+		loadText = Mars will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:wr::
+	if runStatus
+	{
+		loadedScript = windranger.ahk
+		Run %loadedScript%
+		runStatus = 0
+		loadText = Windranger will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+
 ;Display Text
 displayText(textToDisplay)
 {
