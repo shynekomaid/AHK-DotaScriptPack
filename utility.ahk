@@ -461,6 +461,85 @@ return
 	}
 return
 
+:*:es::
+	if runStatus
+	{
+		loadedScript = earthsoirit.ahk
+		Run %loadedScript%
+		runStatus = 0
+		loadText = Earthspirit will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:cm::
+	if runStatus
+	{
+		loadedScript = cm.ahk
+		Run %loadedScript%
+		runStatus = 0
+		loadText = Cristal Maiden will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:axe::
+	if runStatus
+	{
+		loadedScript = axe.ahk
+		runStatus = 0
+		loadText = Axe will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:io::
+	if runStatus
+	{
+		loadedScript = io.ahk
+		runStatus = 0
+		loadText = Io will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:sand::
+	if runStatus
+	{
+		loadedScript = sand.ahk
+		runStatus = 0
+		loadText = Sand King will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:ta::
+	if runStatus
+	{
+		loadedScript = templar.ahk
+		runStatus = 0
+		loadText = Templar Assassin will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
 
 ;Display Text
 displayText(textToDisplay)
