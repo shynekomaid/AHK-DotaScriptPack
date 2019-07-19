@@ -541,6 +541,19 @@ return
 	}
 return
 
+:*:inv::
+	if runStatus
+	{
+		loadedScript = invoker.ahk
+		runStatus = 0
+		loadText = Shitty Wizard will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
 ;Display Text
 displayText(textToDisplay)
 {
