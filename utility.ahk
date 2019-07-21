@@ -51,7 +51,18 @@ global ability4 = "d"
 global ability5 = "f"
 global ability6 = "r"
 
-;coordinates to search backpack
+
+;courier
+global pickCourier = "f4"
+global deliveItem = "f3"
+global openShop = "b"
+global courierAbility1 = "q"
+global courierAbility2 = "w"
+global courierAbility3 = "e"
+global courierAbility4 = "d"
+global courierAbility5 = "f"
+global courierAbility6 = "r"
+
 
 
 ; kill another script
@@ -348,6 +359,38 @@ space & MButton::
 return
 
 
+; express gem delivery
+; use ONLY when courier on base and you have 1200 gold 
+; need buy hotkeys!!
+
+Numpad7::
+
+; buy iron branch
+sleep 25
+sendPlay {%openShop%}
+loop 6
+{
+	sleep 25
+	sendPlay w1
+}
+sleep 25
+sendPlay {%deliveItem%}
+sendPlay r- ; gem
+sendPlay {%openShop%}
+sleep 3000
+sendPlay {%deliveItem%}
+sleep 30
+sendPlay {%pickCourier%}
+sleep 25
+sendPlay {%courierAbility3%}
+sleep 25
+sendPlay {%selectHero%}
+
+
+return
+
+
+
 
 ; Right click spammer (10ms delay) 
 $LWin::  
@@ -547,6 +590,19 @@ return
 		loadedScript = invoker.ahk
 		runStatus = 0
 		loadText = Shitty Wizard will be loaded after beep
+		displayText(loadText)
+		sleep, 2000
+		SoundBeep, 200, 200
+		ExitApp
+	}
+return
+
+:*:br::
+	if runStatus
+	{
+		loadedScript = bristleback.ahk
+		runStatus = 0
+		loadText = Bristleback will be loaded after beep
 		displayText(loadText)
 		sleep, 2000
 		SoundBeep, 200, 200

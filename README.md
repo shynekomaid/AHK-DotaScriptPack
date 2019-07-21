@@ -23,6 +23,7 @@ LAlt + Numpad0 -- reload scripts (dont reload timer.ahk)
 space + F7 -- off timer notifications to chat (dont save state!)
 PgUp -- pause timer notifications to chat (use when game paused!)
 space + 3 -- instant tp to base
+Numpad7 -- express gem delivery (need 1200, courier on base and configure shophotkeys and anoher keys, see utility.ahk)
 
 ---------- NOTE FOR CONFIGURE FOR ALL DISPLAY ----------
 
