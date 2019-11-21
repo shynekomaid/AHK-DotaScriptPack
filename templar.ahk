@@ -4,30 +4,12 @@ I_Icon = %A_ScriptDir%/icons/templar.png
 #SingleInstance force
 #IfWinActive Dota 2
 
-; configure new refraction key there
-global newRefraction = "z"
 
 ; item 4 - pt
-
-q::
-SendInput {%item4%}
-sleep, 20
-SendInput {%item4%}
-sleep, 50
-SendInput {%ability1%}
-sleep, 50
-SendInput {%item4%}
-sleep, 20
-SendInput {shift up}
-return
 
 
 
 f:: ; automeld
-sleep, 50	
-SendInput {%item4%}
-sleep, 20
-SendInput {%item4%}
 sleep, 20
 SendInput {%ability2%}
 sleep, 50
@@ -35,7 +17,7 @@ SendInput {%attack%}
 sleep, 50
 MouseClick, left
 sleep, 300
-SendInput {%item4%}
+
 return
 
 
@@ -45,7 +27,7 @@ sleep, 320
 SendInput {%item4%}
 sleep, 50
 SendInput {%item4%}
-sleep, 30
+sleep, 50
 SendInput {%ability4%}
 sleep, 50
 SendInput {%item4%}
