@@ -17,7 +17,6 @@ Sendinput {%item3%}
 delay()
 SendInput, {%item6%}
 delay()
-delay()
 SendInput, {%ability6%}
 delay()
 SendInput {alt down}

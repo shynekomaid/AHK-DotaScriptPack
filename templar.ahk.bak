@@ -23,7 +23,7 @@ return
 
 e:: ; quick trap
 SendInput {%ability6%}
-sleep, 410
+sleep, 390
 SendInput {%ability4%}
 
 return
