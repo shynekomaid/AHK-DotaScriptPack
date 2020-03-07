@@ -9,7 +9,13 @@ SetBatchLines -1
 ; item 4 - bkb
 ; item 6 - discord
 
-
+q::
+{
+   Send q
+   KeyWait, q
+   Send q
+}
+return
 
 space & q::
 SendInput, {%ability1%}
@@ -55,6 +61,29 @@ sleep 50
 SendInput, {%ability2%}
 return
 
+Space & e::
+SendInput, {%ability2%}
+sleep, 1560
+SendInput, {%ability3%}
+sleep 50
+SendInput, {%ability3%}
+sleep 50
+SendInput, {%ability3%}
+return
+
+Alt & e::
+SendInput, {%item6%}
+sleep 50
+SendInput, {%ability2%}
+sleep, 1560
+SendInput, {%ability3%}
+sleep 50
+SendInput, {%ability3%}
+sleep 50
+SendInput, {%ability3%}
+sleep 50
+SendInput, {%ability3%}
+return
 
 space & r::
 SendInput, {%ability6%}
@@ -78,7 +107,7 @@ return
 
 alt & t::
 SendInput, {%ability2%}
-sleep, 1540
+sleep, 1560
 SendInput, {%pickCourier%}
 SendInput, {%pickCourier%}
 sleep, 50
